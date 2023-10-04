@@ -7,9 +7,6 @@ patchesStrategicMerge:
 replicas:
 - name: vote
   count: 4
-images:
-- name: schoolofdevops/vote
-  newTag: v1
 namespace: prod
 commonLabels:
   project: instavote
