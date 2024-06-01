@@ -5,7 +5,7 @@ metadata:
 spec:
   ports:
   - name: "80"
-    nodePort: 30300
+    nodePort: 30000
     port: 80
     protocol: TCP
     targetPort: 80
