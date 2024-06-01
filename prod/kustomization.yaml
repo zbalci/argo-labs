@@ -9,7 +9,7 @@ namespace: prod
 commonAnnotations:
   supported-by: sre@example.com
 labels:
-- includeSelectors: true
+- includeSelectors: false
   pairs:
     project: instavote
 patches:
