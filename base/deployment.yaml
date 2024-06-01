@@ -14,7 +14,6 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: vote
         tier: front
@@ -23,5 +22,11 @@ spec:
       - image: schoolofdevops/vote:v1
         name: vote
         imagePullPolicy: Always
-        resources: {}
+        resources: 
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+          limits: 
+            cpu: "250m"
+            memory: "128Mi"
 
