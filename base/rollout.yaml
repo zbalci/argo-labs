@@ -23,7 +23,7 @@ spec:
         tier: front
     spec:
       containers:
-      - image: schoolofdevops/vote:v3
+      - image: hub.zekibalci.com/vote
         name: vote
         imagePullPolicy: Always
         resources:
@@ -33,4 +33,5 @@ spec:
           limits:
             cpu: "250m"
             memory: "128Mi"
-
+      imagePullSecrets:
+      - name: docker-registry-creds
