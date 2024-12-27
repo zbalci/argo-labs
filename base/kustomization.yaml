@@ -4,3 +4,7 @@ resources:
 - rollout.yaml
 - service.yaml
 - preview-service.yaml
+images:
+- name: hub.zekibalci.com/vote
+  newName: hub.zekibalci.com/vote
+  newTag: 52eea4d
