@@ -26,6 +26,8 @@ spec:
       - image: hub.zekibalci.com/vote
         name: vote
         imagePullPolicy: Always
+        imagePullSecrets: docker-registry-creds
+          - name: 
         resources:
           requests:
             cpu: "50m"
